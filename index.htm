@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUXE Salon & Beauty Studio</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;800&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+  
+  <style>
+    * { font-family: 'Inter', sans-serif; }
+    .luxury-title { font-family: 'Playfair Display', serif; }
+  </style>
+</head>
+<body class="bg-black text-white">
+
+<!-- NAV -->
+<header class="w-full fixed top-0 left-0 border-b border-[#CBA135] bg-black/90 backdrop-blur z-50">
+  <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+    <h1 class="text-xl luxury-title tracking-wide text-[#CBA135]">LUXE SALON</h1>
+
+    <nav class="hidden md:flex gap-6 text-sm">
+      <a href="#home" class="hover:text-[#CBA135]">Home</a>
+      <a href="#pricing" class="hover:text-[#CBA135]">Pricing</a>
+      <a href="#offers" class="hover:text-[#CBA135]">Offers</a>
+      <a href="#gallery" class="hover:text-[#CBA135]">Gallery</a>
+      <a href="#book" class="hover:text-[#CBA135]">Book</a>
+      <a href="#contact" class="hover:text-[#CBA135]">Contact</a>
+    </nav>
+
+    <a href="tel:+919999999999" class="hidden md:block px-4 py-2 border border-[#CBA135] text-[#CBA135] rounded-full hover:bg-[#CBA135] hover:text-black transition">
+      Call Now
+    </a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="home" class="pt-28 pb-20 max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+  <div>
+    <h2 class="luxury-title text-5xl font-semibold leading-tight">Where Beauty Meets <span class="text-[#CBA135]">Elegance</span></h2>
+    <p class="mt-4 text-gray-300 text-sm">Luxury hair, makeup and skincare services crafted with perfection.</p>
+    
+    <div class="mt-6 flex gap-3">
+      <button id="whatsappBtn" class="px-6 py-3 bg-[#CBA135] text-black font-semibold rounded-full hover:bg-white transition">
+        Book via WhatsApp
+      </button>
+      <a href="tel:+919999999999" class="px-6 py-3 border border-[#CBA135] rounded-full text-[#CBA135] hover:bg-[#CBA135] hover:text-black transition">
+        Call Now
+      </a>
+    </div>
+  </div>
+
+  <img src="https://images.pexels.com/photos/7691096/pexels-photo-7691096.jpeg?auto=compress&cs=tinysrgb&w=800"
+       class="rounded-2xl shadow-lg border border-[#CBA135]" />
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="py-16 bg-[#111] border-y border-[#CBA135]">
+  <div class="max-w-6xl mx-auto px-4">
+    <h3 class="luxury-title text-3xl mb-6 text-center">Pricing</h3>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      
+      <div class="border border-[#CBA135] p-6 rounded-2xl">
+        <h4 class="luxury-title text-xl mb-3">Hair Services</h4>
+        <ul class="text-gray-300 text-sm space-y-2">
+          <li>Haircut — ₹499</li>
+          <li>Hair Spa — ₹999</li>
+          <li>Color — ₹1999</li>
+        </ul>
+        <button data-service="Hair Service" class="bookBtn mt-4 block w-full px-4 py-2 bg-[#CBA135] text-black rounded-full">Book</button>
+      </div>
+
+      <div class="border border-[#CBA135] p-6 rounded-2xl">
+        <h4 class="luxury-title text-xl mb-3">Makeup</h4>
+        <ul class="text-gray-300 text-sm space-y-2">
+          <li>Party Makeup — ₹2499</li>
+          <li>Bridal Makeup — ₹7999</li>
+        </ul>
+        <button data-service="Makeup Service" class="bookBtn mt-4 block w-full px-4 py-2 bg-[#CBA135] text-black rounded-full">Book</button>
+      </div>
+
+      <div class="border border-[#CBA135] p-6 rounded-2xl">
+        <h4 class="luxury-title text-xl mb-3">Skin & Spa</h4>
+        <ul class="text-gray-300 text-sm space-y-2">
+          <li>Facial — ₹1499</li>
+          <li>Body Spa — ₹2499</li>
+        </ul>
+        <button data-service="Spa/Facial" class="bookBtn mt-4 block w-full px-4 py-2 bg-[#CBA135] text-black rounded-full">Book</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- OFFERS -->
+<section id="offers" class="py-16 max-w-6xl mx-auto px-4">
+  <h3 class="luxury-title text-3xl mb-6">Special Offers</h3>
+
+  <div class="grid md:grid-cols-2 gap-6">
+
+    <div class="border border-[#CBA135] p-6 rounded-xl">
+      <p class="text-[#CBA135]">🔥 New Customer Offer</p>
+      <p class="text-gray-300 text-sm mt-2">Flat 20% off Above ₹999</p>
+      <button class="offerBtn mt-4 px-4 py-2 border border-[#CBA135] rounded-full">Claim Offer</button>
+    </div>
+
+    <div class="border border-[#CBA135] p-6 rounded-xl">
+      <p class="text-[#CBA135]">✨ Bridal Package</p>
+      <p class="text-gray-300 text-sm mt-2">Free Trial Makeup worth ₹999</p>
+      <button class="offerBtn mt-4 px-4 py-2 border border-[#CBA135] rounded-full">Get Details</button>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="py-16 bg-[#111] border-y border-[#CBA135]">
+  <div class="max-w-6xl mx-auto px-4">
+    <h3 class="luxury-title text-3xl mb-6 text-center">Gallery</h3>
+
+    <div class="grid md:grid-cols-3 gap-4">
+      <img class="rounded-xl border border-[#CBA135]" src="https://images.pexels.com/photos/3993449/pexels-photo-3993449.jpeg?w=800">
+      <img class="rounded-xl border border-[#CBA135]" src="https://images.pexels.com/photos/3738073/pexels-photo-3738073.jpeg?w=800">
+      <img class="rounded-xl border border-[#CBA135]" src="https://images.pexels.com/photos/3738097/pexels-photo-3738097.jpeg?w=800">
+    </div>
+  </div>
+</section>
+
+<!-- FORM -->
+<section id="book" class="py-16 max-w-5xl mx-auto px-4">
+  <h3 class="luxury-title text-3xl mb-4">Book Appointment</h3>
+
+  <form id="bookingForm" class="grid gap-4">
+    <input type="text" placeholder="Name" required class="p-3 rounded border border-[#CBA135] bg-transparent">
+    <input type="tel" placeholder="Phone" required class="p-3 rounded border border-[#CBA135] bg-transparent">
+    <input type="text" placeholder="Service Needed" class="p-3 rounded border border-[#CBA135] bg-transparent">
+    <button class="px-5 py-3 bg-[#CBA135] text-black rounded-full font-semibold">Send on WhatsApp</button>
+  </form>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-16 bg-[#111] border-t border-[#CBA135]">
+  <div class="max-w-6xl mx-auto text-center">
+    <h3 class="luxury-title text-3xl mb-4">Find Us</h3>
+    <p class="text-gray-400">📍 Your Salon Address</p>
+    <iframe class="mt-5 w-full h-72 rounded border border-[#CBA135]"
+      src="https://www.google.com/maps/embed?pb=!1m18!..."></iframe>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-6 text-center text-sm text-gray-400 border-t border-[#CBA135]">
+  © <span id="year"></span> Luxe Salon — All Rights Reserved
+</footer>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/919999999999" target="_blank"
+   class="fixed bottom-5 right-5 px-4 py-3 bg-[#CBA135] text-black text-sm rounded-full shadow-lg">💬 WhatsApp</a>
+
+<script>
+  const number = "919999999999";
+
+  // Pre-fill WhatsApp message
+  document.getElementById("whatsappBtn").onclick = () => {
+    window.open(`https://wa.me/${number}?text=Hi, I want to book an appointment.`, "_blank");
+  };
+
+  document.querySelectorAll(".bookBtn").forEach(btn => {
+    btn.onclick = () => {
+      const msg = `Hi, I want to book: ${btn.dataset.service}`;
+      window.open(`https://wa.me/${number}?text=${msg}`, "_blank");
+    };
+  });
+
+  document.querySelectorAll(".offerBtn").forEach(btn => {
+    btn.onclick = () => {
+      window.open(`https://wa.me/${number}?text=Hi, I want to claim an offer.`, "_blank");
+    };
+  });
+
+  // Booking form send
+  document.getElementById("bookingForm").onsubmit = (e) => {
+    e.preventDefault();
+    const fields = [...e.target.querySelectorAll("input")].map(i => i.value).join(", ");
+    window.open(`https://wa.me/${number}?text=Booking Details: ${fields}`, "_blank");
+  };
+
+  // Year update
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
